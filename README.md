@@ -15,14 +15,16 @@ xlwings is a BSD-licensed Python library that makes it easy to call Python from 
 Current build status
 ====================
 
-Linux: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/xlwings-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/xlwings-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/xlwings-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/xlwings-feedstock/branch/master)
+[![OSX](https://img.shields.io/travis/conda-forge/xlwings-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/xlwings-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/xlwings-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/xlwings-feedstock/branch/master)
+![Linux disabled](https://img.shields.io/badge/linux-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xlwings/badges/version.svg)](https://anaconda.org/conda-forge/xlwings)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xlwings/badges/downloads.svg)](https://anaconda.org/conda-forge/xlwings)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-xlwings-green.svg)](https://anaconda.org/conda-forge/xlwings) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xlwings.svg)](https://anaconda.org/conda-forge/xlwings) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/xlwings.svg)](https://anaconda.org/conda-forge/xlwings) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xlwings.svg)](https://anaconda.org/conda-forge/xlwings) |
 
 Installing xlwings
 ==================
