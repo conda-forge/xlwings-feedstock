@@ -90,6 +90,7 @@ Current build status
       <img src="https://img.shields.io/badge/linux-disabled-lightgrey.svg" alt="linux disabled">
     </td>
   </tr>
+![ppc64le disabled](https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg)
 </table>
 
 Current release info
