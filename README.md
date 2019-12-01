@@ -198,5 +198,3 @@ Feedstock Maintainers
 =====================
 
 * [@fzumstein](https://github.com/fzumstein/)
-* [@nirajd](https://github.com/nirajd/)
-
