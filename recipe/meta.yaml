@@ -16,7 +16,7 @@ build:
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - xlwings = xlwings.cli:main
-  skip: True  # [linux]
+  skip: True  # [linux or py<35]
 
 requirements:
   build:
