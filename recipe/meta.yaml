@@ -1,6 +1,6 @@
 {% set name = "xlwings" %}
-{% set version = "0.18.0" %}
-{% set sha256 = "c441187bf11b9e53ecce282d9db95a95720026820fb4d468c5d548e430a33b8c" %}
+{% set version = "0.19.0" %}
+{% set sha256 = "02952d7e629f81869b772e9f2eae362cb004590acf500f4579a614e17e0d6e07" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - xlwings = xlwings.cli:main
