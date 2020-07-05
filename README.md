@@ -5,7 +5,7 @@ Home: http://xlwings.org/
 
 Package license: 3-clause BSD
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Interact with Excel from Python and vice versa
 
