@@ -1,6 +1,6 @@
 {% set name = "xlwings" %}
-{% set version = "0.20.7" %}
-{% set sha256 = "02b169fca95b38ad231081294597a4344721f43eb5df0f905edb19331d69d57f" %}
+{% set version = "0.20.8" %}
+{% set sha256 = "35d3bd03c4b81f6b28b58f77d895eccc04c14559fda4ec52a4d6a9dacac892a8" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - xlwings = xlwings.cli:main
@@ -37,15 +37,15 @@ test:
     - xlwings.conversion
 
 about:
-  home: http://xlwings.org/
-  license: 3-clause BSD
+  home: https://www.xlwings.org/
+  license: 3-clause-BSD
   license_family: BSD
   license_file: LICENSE.txt
   summary: Interact with Excel from Python and vice versa
   description: |
     xlwings is a BSD-licensed Python library that makes it easy to call Python from Excel and vice versa.
   doc_url: http://docs.xlwings.org/en/stable/index.html
-  dev_url: https://github.com/ZoomerAnalytics/xlwings
+  dev_url: https://github.com/xlwings/xlwings
 
 extra:
   recipe-maintainers:
