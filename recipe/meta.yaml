@@ -13,18 +13,19 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - xlwings = xlwings.cli:main
   skip: true  # [linux or py<35]
 
 requirements:
+  host:
+    - pip
   build:
     - python
     - setuptools
   run:
     - python
-    - comtypes  # [win]
     - pywin32  # [win]
     - psutil >=2.0  # [osx]
     - appscript >=1.0.1  # [osx]
@@ -38,7 +39,7 @@ test:
 
 about:
   home: https://www.xlwings.org/
-  license: 3-clause-BSD
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
   summary: Interact with Excel from Python and vice versa

@@ -3,7 +3,7 @@ About xlwings
 
 Home: https://www.xlwings.org/
 
-Package license: 3-clause-BSD
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xlwings-feedstock/blob/master/LICENSE.txt)
 
