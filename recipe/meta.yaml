@@ -1,6 +1,6 @@
 {% set name = "xlwings" %}
-{% set version = "0.20.8" %}
-{% set sha256 = "35d3bd03c4b81f6b28b58f77d895eccc04c14559fda4ec52a4d6a9dacac892a8" %}
+{% set version = "0.21.0" %}
+{% set sha256 = "f1adb4590d63f0b81c2fcb09942ee89d94128fec4c0af1b626958412e02f818f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - xlwings = xlwings.cli:main
   skip: true  # [linux or py<35]
@@ -21,10 +21,12 @@ build:
 requirements:
   build:
     - python
-    - setuptools
+    - pip
+  host:
+    - python
+    - pip
   run:
     - python
-    - comtypes  # [win]
     - pywin32  # [win]
     - psutil >=2.0  # [osx]
     - appscript >=1.0.1  # [osx]
@@ -38,7 +40,7 @@ test:
 
 about:
   home: https://www.xlwings.org/
-  license: 3-clause-BSD
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
   summary: Interact with Excel from Python and vice versa
