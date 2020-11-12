@@ -19,11 +19,11 @@ build:
   skip: true  # [linux or py<35]
 
 requirements:
-  host:
-    - pip
   build:
     - python
     - setuptools
+  host:
+    - pip
   run:
     - python
     - pywin32  # [win]
