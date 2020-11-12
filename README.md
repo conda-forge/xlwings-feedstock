@@ -1,15 +1,15 @@
 About xlwings
 =============
 
-Home: http://xlwings.org/
+Home: https://www.xlwings.org/
 
-Package license: 3-clause BSD
+Package license: 3-clause-BSD
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xlwings-feedstock/blob/master/LICENSE.txt)
 
 Summary: Interact with Excel from Python and vice versa
 
-Development: https://github.com/ZoomerAnalytics/xlwings
+Development: https://github.com/xlwings/xlwings
 
 Documentation: http://docs.xlwings.org/en/stable/index.html
 
