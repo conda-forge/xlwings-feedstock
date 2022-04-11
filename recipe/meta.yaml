@@ -16,7 +16,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - xlwings = xlwings.cli:main
-  skip: true  # [linux or py<35]
+  skip: true  # [py<35]
 
 requirements:
   build:
