@@ -1,11 +1,11 @@
-About xlwings
-=============
+About xlwings-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xlwings-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.xlwings.org/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xlwings-feedstock/blob/main/LICENSE.txt)
 
 Summary: Interact with Excel from Python and vice versa
 
