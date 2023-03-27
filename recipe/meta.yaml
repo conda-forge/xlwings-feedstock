@@ -1,6 +1,6 @@
 {% set name = "xlwings" %}
-{% set version = "0.30.2" %}
-{% set sha256 = "9d25c08881267df80aeafac78a5435e50325ee16c475baeb00863a51f1b268f1" %}
+{% set version = "0.30.3" %}
+{% set sha256 = "a0147b5d1bfcdd6fd4ec7ef567354a71787e67c2b5cace0af22ff7c90fc35596" %}
 
 package:
   name: {{ name|lower }}
@@ -17,6 +17,8 @@ build:
   entry_points:
     - xlwings = xlwings.cli:main
   skip: true  # [py<35]
+  script_env:
+    - XLWINGS_LICENSE_KEY=noncommercial
 
 requirements:
   build:
