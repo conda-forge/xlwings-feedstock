@@ -17,6 +17,8 @@ build:
   entry_points:
     - xlwings = xlwings.cli:main
   skip: true  # [py<35]
+  script_env:
+    - XLWINGS_LICENSE_KEY=noncommercial
 
 requirements:
   build:
