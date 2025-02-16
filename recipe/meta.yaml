@@ -19,15 +19,22 @@ build:
   skip: true  # [py<39]
   script_env:
     - XLWINGS_LICENSE_KEY=noncommercial
+    - BUILD_RUST=1
 
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - maturin >=1,<2                         # [build_platform != target_platform]
+    - {{ compiler("c") }}
+    - {{ stdlib("c") }}
+    - {{ compiler("rust") }}
   host:
     - python
     - pip
     - setuptools
+    - maturin >=1,<2  #[!win]
+    - setuptools-rust  # [win]
   run:
     - python
     - pywin32  # [win]
