@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - xlwings = xlwings.cli:main
@@ -33,7 +33,7 @@ requirements:
     - python
     - pip
     - setuptools
-    - maturin >=1,<2  #[!win]
+    - maturin >=1,<2  # [not win]
     - setuptools-rust  # [win]
   run:
     - python
