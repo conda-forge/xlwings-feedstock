@@ -1,3 +1,7 @@
+c_compiler:
+- vs2019
+c_stdlib:
+- vs
 channel_sources:
 - conda-forge
 channel_targets:
@@ -8,5 +12,7 @@ pin_run_as_build:
     max_pin: x.x
 python:
 - 3.12.* *_cpython
+rust_compiler:
+- rust
 target_platform:
 - win-64
