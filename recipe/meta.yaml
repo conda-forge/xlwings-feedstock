@@ -1,6 +1,6 @@
 {% set name = "xlwings" %}
-{% set version = "0.33.16" %}
-{% set sha256 = "3ed1b93199d2cb4509ad9a3d4bab38ce483a8eaa39d38ffd034b7edac3241b51" %}
+{% set version = "0.33.17" %}
+{% set sha256 = "520b05b6434cab52ec367670642f21c8beef7766c08d358307850e52148c4a11" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script:
     - del pyproject.toml  # [win]
     - {{ PYTHON }} -m pip install . --no-deps -vv
