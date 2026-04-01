@@ -1,6 +1,6 @@
 {% set name = "xlwings" %}
-{% set version = "0.33.22" %}
-{% set sha256 = "2020e7784af8de3a7d3b0a395b8e769107962813741b569ea2073cc90d958b30" %}
+{% set version = "0.34.0" %}
+{% set sha256 = "9b4259728c5ca9cb91876249c575533045305e94952c9f0d11e71641d4cc8192" %}
 
 package:
   name: {{ name|lower }}
