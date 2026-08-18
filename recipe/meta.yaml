@@ -1,6 +1,6 @@
 {% set name = "xlwings" %}
-{% set version = "0.36.14" %}
-{% set sha256 = "b864970bd16a0f36beb5b452d6600de4c2075af3cf62563029b597fbead3f887" %}
+{% set version = "0.36.17" %}
+{% set sha256 = "d733c9fbd0c50d139ad03cb1df4991b1a558eb87d95fbbbd1b52f9bf1e39a217" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
